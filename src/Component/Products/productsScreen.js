@@ -62,13 +62,7 @@ function productsScreen(props) {
       <div class="main-products-screen">
         <div class="products-display">
           {data.products.map((product) => (
-            <Product
-              id={product.id}
-              name={product.name}
-              brand={product.brand}
-              price={product.price}
-              image={product.image}
-            />
+            <Product product={product} />
           ))}
         </div>
       </div>
