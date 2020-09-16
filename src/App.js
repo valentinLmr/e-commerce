@@ -2,7 +2,7 @@ import React from "react";
 import logo from "./logo.svg";
 import { BrowserRouter, Route, Link } from "react-router-dom";
 import HomeScreen from "./Component/homeScreen";
-import ProductsScreen from "./Component/productsScreen";
+import ProductsScreen from "./Component/Products/productsScreen";
 import "./App.css";
 
 function App() {
