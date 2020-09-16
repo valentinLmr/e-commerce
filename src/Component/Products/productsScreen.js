@@ -1,6 +1,6 @@
 import React from "react";
-import data from "./data";
-import { Link } from "react-router-dom";
+import Product from "./product";
+import data from "./dataProducts";
 
 function productsScreen(props) {
   return (
@@ -62,18 +62,13 @@ function productsScreen(props) {
       <div class="main-products-screen">
         <div class="products-display">
           {data.products.map((product) => (
-            <Link class="product-card" to={"/products/" + product.id}>
-              <div class="container-image-product-card">
-                <img src={product.image} />
-              </div>
-              <div class="card-trip-infos">
-                <div>
-                  <h2>{product.name}</h2>
-                  <p>{product.brand}</p>
-                </div>
-                <h2 class="card-trip-pricing">{product.price}</h2>
-              </div>
-            </Link>
+            <Product
+              id={product.id}
+              name={product.name}
+              brand={product.brand}
+              price={product.price}
+              image={product.image}
+            />
           ))}
         </div>
       </div>
