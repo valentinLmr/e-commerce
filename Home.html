@@ -33,248 +33,95 @@
       </header>
 
       <main class="main">
-        <section class="filterbar">
-          <form>
-            <div class="Searchbar">
-              <input type="text" value="What are you looking for ?" /><i
-                class="fas fa-search"
-              ></i>
+        <div class="product-display-screen">
+          <aside class="product-side-pictures">
+            <div class="container-photos-product-sider">
+              <div class="photo"></div>
+              <div class="photo"></div>
+              <div class="photo"></div>
+              <div class="photo"></div>
+              <div class="photo"></div>
             </div>
-          </form>
-          <ul class="filters">
-            <li>Robe</li>
-            <li>Jupe</li>
-            <li>Tee-shirt</li>
-            <li>Sweatshirt</li>
-            <li>Pants</li>
-            <li>Jean</li>
-            <li>Vest</li>
-            <li>overalls</li>
-          </ul>
-
-          <div class="under-filters">
-            <form class="under-filters-form">
-              <select type="select" value="Size">
-                <option>XS</option>
-                <option>S</option>
-                <option>M</option>
-                <option>L</option>
-                <option>XL</option>
-                <option>XXL</option>
-              </select>
-              <select type="select" value="Brand">
-                <option>Adidas</option>
-                <option>Nike</option>
-                <option>Vans</option>
-                <option>Veja</option>
-                <option>Converse</option>
-              </select>
-              <select type="select" value="Price">
-                <option>20 €</option>
-                <option>40 €</option>
-                <option>60 €</option>
-                <option>80 €</option>
-                <option>100 €</option>
-                <option>150 €</option>
-              </select>
-              <select type="select" value="color">
-                <option>Blue</option>
-                <option>Red</option>
-                <option>Yellow</option>
-                <option>Orange</option>
-                <option>Green</option>
-                <option>Black</option>
-              </select>
-            </form>
+          </aside>
+          <div class="product-picture-selected">
+            <div class="central-photo"></div>
           </div>
-        </section>
-        <div class="main-products-screen">
-          <!-- <aside class="search-sidebar">
-            <div class="Catégorie">
-              <h2>Catégorie</h2>
-              <ul>
-                <li>Robe</li>
-                <li>Jupe</li>
-                <li>Tee-shirt</li>
-                <li>Sweatshirt</li>
-                <li>Pants</li>
-                <li>Jean</li>
-                <li>Vest</li>
-                <li>overalls</li>
-              </ul>
-            </div>
-          </aside> -->
-          <div class="products-display">
-            <div class="product-card">
-              <div class="container-image-product-card">
-                <img src="./public/image/OIP.jpeg" />
-              </div>
-              <div class="card-trip-infos">
-                <div>
-                  <h2>Bohemian dress</h2>
-                  <p>Banditas</p>
+          <aside class="product-side-infos">
+            <div class="product-infos">
+              <div class="product-name">
+                <h4>Brand Name</h4>
+                <h1>Name</h1>
+                <div style="display: flex; justify-content: space-between">
+                  <p style="font-size: 12px; text-decoration-line: underline">
+                    Détails
+                  </p>
+                  <p>Rating</p>
                 </div>
-                <h2 class="card-trip-pricing">59.99€</h2>
               </div>
-            </div>
+              <div class="details-product">
+                <div class="detail couleur-product">
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                    "
+                  >
+                    <div
+                      style="
+                        height: 1.5rem;
+                        width: 1.5rem;
+                        background-color: pink;
+                        border-radius: 50%;
+                      "
+                    ></div>
+                    <p>Rose</p>
+                  </div>
+                  <div class="setting-color-product">
+                    <p>Nb of color</p>
+                    <i class="fas fa-caret-down"></i>
+                  </div>
+                </div>
 
-            <div class="product-card">
-              <div class="container-image-product-card">
-                <img src="./public/image/OIP.jpeg" />
-              </div>
-              <div class="card-trip-infos">
-                <div>
-                  <h2>Bohemian dress</h2>
-                  <p>Banditas</p>
+                <div
+                  class="detail"
+                  style="
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                  "
+                >
+                  <p>Taille</p>
+                  <div class="setting-color-product">
+                    <p>L</p>
+                    <i class="fas fa-caret-down"></i>
+                  </div>
                 </div>
-                <h2 class="card-trip-pricing">59.99€</h2>
+                <div class="detail">
+                  <p>Guide des tailles</p>
+                </div>
+                <div class="detail">
+                  <input type="text" value="Code promo" />
+                </div>
+
+                <h2 style="font-size: 28px">59.99€</h2>
+              </div>
+              <div style="display: flex; justify-content: center">
+                <button
+                  style="
+                    width: 15rem;
+                    height: 4rem;
+                    color: white;
+                    border: none;
+                    border-radius: 5px;
+                    background-color: #203040;
+                  "
+                >
+                  Ajouter au panier
+                </button>
               </div>
             </div>
-            <div class="product-card">
-              <div class="container-image-product-card">
-                <img src="./public/image/OIP.jpeg" />
-              </div>
-              <div class="card-trip-infos">
-                <div>
-                  <h2>Bohemian dress</h2>
-                  <p>Banditas</p>
-                </div>
-                <h2 class="card-trip-pricing">59.99€</h2>
-              </div>
-            </div>
-            <div class="product-card">
-              <div class="container-image-product-card">
-                <img src="./public/image/OIP.jpeg" />
-              </div>
-              <div class="card-trip-infos">
-                <div>
-                  <h2>Bohemian dress</h2>
-                  <p>Banditas</p>
-                </div>
-                <h2 class="card-trip-pricing">59.99€</h2>
-              </div>
-            </div>
-            <div class="product-card">
-              <div class="container-image-product-card">
-                <img src="./public/image/OIP.jpeg" />
-              </div>
-              <div class="card-trip-infos">
-                <div>
-                  <h2>Bohemian dress</h2>
-                  <p>Banditas</p>
-                </div>
-                <h2 class="card-trip-pricing">59.99€</h2>
-              </div>
-            </div>
-            <div class="product-card">
-              <div class="container-image-product-card">
-                <img src="./public/image/OIP.jpeg" />
-              </div>
-              <div class="card-trip-infos">
-                <div>
-                  <h2>Bohemian dress</h2>
-                  <p>Banditas</p>
-                </div>
-                <h2 class="card-trip-pricing">59.99€</h2>
-              </div>
-            </div>
-            <div class="product-card">
-              <div class="container-image-product-card">
-                <img src="./public/image/OIP.jpeg" />
-              </div>
-              <div class="card-trip-infos">
-                <div>
-                  <h2>Bohemian dress</h2>
-                  <p>Banditas</p>
-                </div>
-                <h2 class="card-trip-pricing">59.99€</h2>
-              </div>
-            </div>
-            <div class="product-card">
-              <div class="container-image-product-card">
-                <img src="./public/image/OIP.jpeg" />
-              </div>
-              <div class="card-trip-infos">
-                <div>
-                  <h2>Bohemian dress</h2>
-                  <p>Banditas</p>
-                </div>
-                <h2 class="card-trip-pricing">59.99€</h2>
-              </div>
-            </div>
-            <div class="product-card">
-              <div class="container-image-product-card">
-                <img src="./public/image/OIP.jpeg" />
-              </div>
-              <div class="card-trip-infos">
-                <div>
-                  <h2>Bohemian dress</h2>
-                  <p>Banditas</p>
-                </div>
-                <h2 class="card-trip-pricing">59.99€</h2>
-              </div>
-            </div>
-            <div class="product-card">
-              <div class="container-image-product-card">
-                <img src="./public/image/OIP.jpeg" />
-              </div>
-              <div class="card-trip-infos">
-                <div>
-                  <h2>Bohemian dress</h2>
-                  <p>Banditas</p>
-                </div>
-                <h2 class="card-trip-pricing">59.99€</h2>
-              </div>
-            </div>
-            <div class="product-card">
-              <div class="container-image-product-card">
-                <img src="./public/image/OIP.jpeg" />
-              </div>
-              <div class="card-trip-infos">
-                <div>
-                  <h2>Bohemian dress</h2>
-                  <p>Banditas</p>
-                </div>
-                <h2 class="card-trip-pricing">59.99€</h2>
-              </div>
-            </div>
-            <div class="product-card">
-              <div class="container-image-product-card">
-                <img src="./public/image/OIP.jpeg" />
-              </div>
-              <div class="card-trip-infos">
-                <div>
-                  <h2>Bohemian dress</h2>
-                  <p>Banditas</p>
-                </div>
-                <h2 class="card-trip-pricing">59.99€</h2>
-              </div>
-            </div>
-            <div class="product-card">
-              <div class="container-image-product-card">
-                <img src="./public/image/OIP.jpeg" />
-              </div>
-              <div class="card-trip-infos">
-                <div>
-                  <h2>Bohemian dress</h2>
-                  <p>Banditas</p>
-                </div>
-                <h2 class="card-trip-pricing">59.99€</h2>
-              </div>
-            </div>
-            <div class="product-card">
-              <div class="container-image-product-card">
-                <img src="./public/image/OIP.jpeg" />
-              </div>
-              <div class="card-trip-infos">
-                <div>
-                  <h2>Bohemian dress</h2>
-                  <p>Banditas</p>
-                </div>
-                <h2 class="card-trip-pricing">59.99€</h2>
-              </div>
-            </div>
-          </div>
+          </aside>
         </div>
       </main>
       <footer class="footer">

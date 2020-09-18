@@ -1,5 +1,5 @@
 import React from "react";
-import Product from "./product";
+import CardProducts from "./cardProducts";
 import data from "./dataProducts";
 
 function productsScreen(props) {
@@ -62,7 +62,7 @@ function productsScreen(props) {
       <div class="main-products-screen">
         <div class="products-display">
           {data.products.map((product) => (
-            <Product product={product} />
+            <CardProducts product={product} />
           ))}
         </div>
       </div>

@@ -3,6 +3,7 @@ import logo from "./logo.svg";
 import { BrowserRouter, Route, Link } from "react-router-dom";
 import HomeScreen from "./Component/homeScreen";
 import ProductsScreen from "./Component/Products/productsScreen";
+import Product from "./Component/Product/Product";
 import "./App.css";
 
 function App() {
@@ -42,7 +43,8 @@ function App() {
           </ul>
         </aside>
         <main className="main">
-          <Route path="/products" component={ProductsScreen} />
+          <Route path="/products/:id" exact={true} component={Product} />
+          <Route path="/products" exact={true} component={ProductsScreen} />
           <Route path="/" exact={true} component={HomeScreen} />
         </main>
         <footer className="footer">
