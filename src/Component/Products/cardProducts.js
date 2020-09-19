@@ -3,7 +3,11 @@ import { Link } from "react-router-dom";
 
 function product(props) {
   return (
-    <Link class="product-card" to={"/products/" + props.product.id}>
+    <Link
+      key={props.key}
+      class="product-card"
+      to={"/products/" + props.product.id}
+    >
       <div class="container-image-product-card">
         <img src={props.product.image} />
       </div>
