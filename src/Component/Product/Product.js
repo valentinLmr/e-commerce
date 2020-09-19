@@ -4,30 +4,32 @@ import "./Product.css";
 
 function product(props) {
   console.log(props.match.params.id);
+  console.log(data);
 
   const product = data.products.find((x) => x.id == props.match.params.id);
+
   return (
     <div class="product-display-screen">
       <aside class="product-side-pictures">
         <div class="container-photos-product-sider">
-          <div class="photo"></div>
-          <div class="photo"></div>
-          <div class="photo"></div>
-          <div class="photo"></div>
-          <div class="photo"></div>
+          <img className="photo" src={product.image}></img>
+          <img className="photo" src={product.image}></img>
+          <img className="photo" src={product.image}></img>
+          <img className="photo" src={product.image}></img>
+          <img className="photo" src={product.image}></img>
         </div>
       </aside>
       <div class="product-picture-selected">
-        <div class="central-photo"></div>
+        <img className="central-photo" src={product.image}></img>
       </div>
       <aside class="product-side-infos">
         <div class="product-infos">
           <div class="product-name">
-            <h4>Brand Name</h4>
-            <h1>Name</h1>
+            <h4>{product.band}</h4>
+            <h1>{product.name}</h1>
             <div style={{ display: "flex", justifyContent: "space-between" }}>
               <p style={{ textDecoration: "underline" }}>Détails</p>
-              <p>Rating</p>
+              <p>5/5</p>
             </div>
           </div>
           <div class="details-product">
