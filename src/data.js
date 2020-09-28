@@ -32,14 +32,10 @@ export default {
               size: "s-m",
               quantity: 2,
             },
-          ],
-          sizes: [
             {
               size: "m-l",
               quantity: 2,
             },
-          ],
-          sizes: [
             {
               size: "xl-xxl",
               quantity: 2,
@@ -53,14 +49,10 @@ export default {
               size: "s-m",
               quantity: 2,
             },
-          ],
-          sizes: [
             {
               size: "m-l",
               quantity: 2,
             },
-          ],
-          sizes: [
             {
               size: "xl-xxl",
               quantity: 2,
@@ -86,14 +78,10 @@ export default {
               size: "s-m",
               quantity: 2,
             },
-          ],
-          sizes: [
             {
               size: "m-l",
               quantity: 2,
             },
-          ],
-          sizes: [
             {
               size: "xl-xxl",
               quantity: 2,
@@ -107,14 +95,10 @@ export default {
               size: "s-m",
               quantity: 2,
             },
-          ],
-          sizes: [
             {
               size: "m-l",
               quantity: 2,
             },
-          ],
-          sizes: [
             {
               size: "xl-xxl",
               quantity: 2,
@@ -128,14 +112,10 @@ export default {
               size: "s-m",
               quantity: 2,
             },
-          ],
-          sizes: [
             {
               size: "m-l",
               quantity: 2,
             },
-          ],
-          sizes: [
             {
               size: "xl-xxl",
               quantity: 2,
@@ -161,14 +141,10 @@ export default {
               size: "s-m",
               quantity: 2,
             },
-          ],
-          sizes: [
             {
               size: "m-l",
               quantity: 2,
             },
-          ],
-          sizes: [
             {
               size: "xl-xxl",
               quantity: 2,
@@ -182,14 +158,10 @@ export default {
               size: "s-m",
               quantity: 2,
             },
-          ],
-          sizes: [
             {
               size: "m-l",
               quantity: 2,
             },
-          ],
-          sizes: [
             {
               size: "xl-xxl",
               quantity: 2,
@@ -203,14 +175,10 @@ export default {
               size: "s-m",
               quantity: 2,
             },
-          ],
-          sizes: [
             {
               size: "m-l",
               quantity: 2,
             },
-          ],
-          sizes: [
             {
               size: "xl-xxl",
               quantity: 2,
@@ -236,14 +204,10 @@ export default {
               size: "s-m",
               quantity: 2,
             },
-          ],
-          sizes: [
             {
               size: "m-l",
               quantity: 2,
             },
-          ],
-          sizes: [
             {
               size: "xl-xxl",
               quantity: 2,
@@ -257,14 +221,10 @@ export default {
               size: "s-m",
               quantity: 2,
             },
-          ],
-          sizes: [
             {
               size: "m-l",
               quantity: 2,
             },
-          ],
-          sizes: [
             {
               size: "xl-xxl",
               quantity: 2,
@@ -278,14 +238,10 @@ export default {
               size: "s-m",
               quantity: 2,
             },
-          ],
-          sizes: [
             {
               size: "m-l",
               quantity: 2,
             },
-          ],
-          sizes: [
             {
               size: "xl-xxl",
               quantity: 2,
@@ -311,14 +267,10 @@ export default {
               size: "s-m",
               quantity: 2,
             },
-          ],
-          sizes: [
             {
               size: "m-l",
               quantity: 2,
             },
-          ],
-          sizes: [
             {
               size: "xl-xxl",
               quantity: 2,
@@ -332,14 +284,10 @@ export default {
               size: "s-m",
               quantity: 2,
             },
-          ],
-          sizes: [
             {
               size: "m-l",
               quantity: 2,
             },
-          ],
-          sizes: [
             {
               size: "xl-xxl",
               quantity: 2,
@@ -353,14 +301,10 @@ export default {
               size: "s-m",
               quantity: 2,
             },
-          ],
-          sizes: [
             {
               size: "m-l",
               quantity: 2,
             },
-          ],
-          sizes: [
             {
               size: "xl-xxl",
               quantity: 2,

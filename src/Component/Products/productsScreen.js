@@ -5,7 +5,7 @@ import data from "./dataProducts";
 
 class productsScreen extends Component {
   state = {
-    data,
+    datas,
   };
 
   category = [];
@@ -17,7 +17,7 @@ class productsScreen extends Component {
     this.category.splice(index, 1);
   };
 
-  changeState = (target) => {
+  changeProductCategories = (target) => {
     let products;
 
     if (this.category.includes(target)) {
@@ -25,16 +25,23 @@ class productsScreen extends Component {
     } else {
       this.category.push(target);
     }
-    products = this.findItems(datas, this.category);
-    this.setState({ data: { products } });
+    products = this.findItems(this.category, "categories");
+    this.setState({ datas: { products } });
   };
 
-  findItems = (datas, filters) => {
+  filtersForProducts = (filter, value) => {
+    this.findItems = (filter, value);
+  };
+
+  findItems = (filters, value) => {
     // filterToString = filter.toString();
     // console.log(filterToString.class);
-    if (filters.length > 0) {
-      filters.forEach((e) => {
-        this.filteredProducts = datas.products.filter((x) => x.categories == e);
+    console.log(this.category);
+    if (this.category.length > 0) {
+      filters.map((e) => {
+        this.filteredProducts = this.state.datas.products.filter(
+          (x) => x[value] == e
+        );
       });
     } else {
       this.filteredProducts = datas.products;
@@ -44,6 +51,7 @@ class productsScreen extends Component {
   };
 
   render() {
+    console.log(this.state);
     return (
       <div>
         <section class="filterbar">
@@ -55,7 +63,7 @@ class productsScreen extends Component {
           </form>
           <ul
             class="filters"
-            onClick={(e) => this.changeState(e.target.innerText)}
+            onClick={(e) => this.changeProductCategories(e.target.innerText)}
           >
             <li>Robe</li>
             <li>Jupe</li>
@@ -69,7 +77,12 @@ class productsScreen extends Component {
 
           <div class="under-filters">
             <form class="under-filters-form">
-              <select type="select" value="Size">
+              <select
+                type="select"
+                onChange={(e) =>
+                  this.filtersForProducts("Size", e.target.value)
+                }
+              >
                 <option>XS</option>
                 <option>S</option>
                 <option>M</option>
@@ -77,14 +90,24 @@ class productsScreen extends Component {
                 <option>XL</option>
                 <option>XXL</option>
               </select>
-              <select type="select" value="Brand">
+              <select
+                type="select"
+                onChange={(e) =>
+                  this.filtersForProducts("Brand", e.target.value)
+                }
+              >
                 <option>Adidas</option>
                 <option>Nike</option>
                 <option>Vans</option>
                 <option>Veja</option>
                 <option>Converse</option>
               </select>
-              <select type="select" value="Price">
+              <select
+                type="select"
+                onChange={(e) =>
+                  this.filtersForProducts("Price", e.target.value)
+                }
+              >
                 <option>20 €</option>
                 <option>40 €</option>
                 <option>60 €</option>
@@ -92,7 +115,12 @@ class productsScreen extends Component {
                 <option>100 €</option>
                 <option>150 €</option>
               </select>
-              <select type="select" value="color">
+              <select
+                type="select"
+                onChange={(e) =>
+                  this.filtersForProducts("color", e.target.value)
+                }
+              >
                 <option>Blue</option>
                 <option>Red</option>
                 <option>Yellow</option>
@@ -105,7 +133,7 @@ class productsScreen extends Component {
         </section>
         <div class="main-products-screen">
           <div class="products-display">
-            {this.state.data.products.map((product) => (
+            {this.state.datas.products.map((product) => (
               <CardProducts product={product} key={product.id} />
             ))}
           </div>
