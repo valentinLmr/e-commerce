@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import CardProducts from "./cardProducts";
+import datas from "../../data";
 import data from "./dataProducts";
 
 class productsScreen extends Component {
@@ -12,6 +13,7 @@ class productsScreen extends Component {
 
   render() {
     const category = [];
+    let product;
 
     const splice = (array, value) => {
       const index = array.indexOf(value);
@@ -25,8 +27,20 @@ class productsScreen extends Component {
       } else {
         category.push(name);
       }
-      console.log(category);
+
+      findItems(datas, category);
     });
+
+    const findItems = (datas, filters) => {
+      // const filterToString = filter.toString();
+      // console.log(filterToString.class);
+
+      filters.forEach((e) => {
+        product = datas.products.filter((x) => x.categories == e);
+      });
+
+      console.log(product);
+    };
 
     return (
       <div>
