@@ -1,6 +1,8 @@
 export default {
   products: [
     {
+      id: 1,
+      image: "../image/OIP.jpeg",
       name: "tunique bandilas",
       categories: "Robe",
       brand: "Banditas",
@@ -70,6 +72,8 @@ export default {
       numReviews: 10,
     },
     {
+      id: 2,
+      image: "../image/OIP.jpeg",
       name: "tunique banditas",
       categories: "Robe",
       brand: "Banditas",
@@ -143,6 +147,8 @@ export default {
       numReviews: 10,
     },
     {
+      id: 3,
+      image: "../image/OIP.jpeg",
       name: "tunique bandilas",
       categories: "dress",
       brand: "Banditas",
@@ -216,6 +222,8 @@ export default {
       numReviews: 10,
     },
     {
+      id: 4,
+      image: "../image/OIP.jpeg",
       name: "tunique bandilas",
       categories: "dress",
       brand: "Banditas",
@@ -289,6 +297,8 @@ export default {
       numReviews: 10,
     },
     {
+      id: 5,
+      image: "../image/OIP.jpeg",
       name: "tunique bandilas",
       categories: "dress",
       brand: "Banditas",

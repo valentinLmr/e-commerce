@@ -4,44 +4,46 @@ import datas from "../../data";
 import data from "./dataProducts";
 
 class productsScreen extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      data,
-    };
-  }
+  state = {
+    data,
+  };
+
+  category = [];
+
+  filteredProducts;
+
+  splice = (array, value) => {
+    const index = array.indexOf(value);
+    this.category.splice(index, 1);
+  };
+
+  changeState = (target) => {
+    let products;
+
+    if (this.category.includes(target)) {
+      this.splice(this.category, target);
+    } else {
+      this.category.push(target);
+    }
+    products = this.findItems(datas, this.category);
+    this.setState({ data: { products } });
+  };
+
+  findItems = (datas, filters) => {
+    // filterToString = filter.toString();
+    // console.log(filterToString.class);
+    if (filters.length > 0) {
+      filters.forEach((e) => {
+        this.filteredProducts = datas.products.filter((x) => x.categories == e);
+      });
+    } else {
+      this.filteredProducts = datas.products;
+    }
+
+    return this.filteredProducts;
+  };
 
   render() {
-    const category = [];
-    let product;
-
-    const splice = (array, value) => {
-      const index = array.indexOf(value);
-      category.splice(index, 1);
-    };
-
-    const changeState = document.addEventListener("click", (e) => {
-      const name = e.target.innerText;
-      if (category.includes(name)) {
-        splice(category, name);
-      } else {
-        category.push(name);
-      }
-
-      findItems(datas, category);
-    });
-
-    const findItems = (datas, filters) => {
-      // const filterToString = filter.toString();
-      // console.log(filterToString.class);
-
-      filters.forEach((e) => {
-        product = datas.products.filter((x) => x.categories == e);
-      });
-
-      console.log(product);
-    };
-
     return (
       <div>
         <section class="filterbar">
@@ -51,7 +53,10 @@ class productsScreen extends Component {
               <i class="fas fa-search"></i>
             </div>
           </form>
-          <ul class="filters" onClick={changeState}>
+          <ul
+            class="filters"
+            onClick={(e) => this.changeState(e.target.innerText)}
+          >
             <li>Robe</li>
             <li>Jupe</li>
             <li>Tee-shirt</li>
@@ -100,7 +105,7 @@ class productsScreen extends Component {
         </section>
         <div class="main-products-screen">
           <div class="products-display">
-            {data.products.map((product) => (
+            {this.state.data.products.map((product) => (
               <CardProducts product={product} key={product.id} />
             ))}
           </div>
