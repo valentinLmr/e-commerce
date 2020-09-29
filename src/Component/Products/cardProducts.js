@@ -8,7 +8,7 @@ function product(props) {
       class="product-card"
       to={"/products/" + props.product.id}
     >
-      <div class="container-image-product-card">
+      <div class="container-image-product-card" key={props.key}>
         <img src={props.product.image} />
       </div>
       <div class="card-trip-infos">

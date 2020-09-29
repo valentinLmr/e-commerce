@@ -10,48 +10,44 @@ class productsScreen extends Component {
 
   category = [];
 
-  filteredProducts;
-
   splice = (array, value) => {
     const index = array.indexOf(value);
     this.category.splice(index, 1);
   };
 
   changeProductCategories = (target) => {
-    let products;
-
-    if (this.category.includes(target)) {
+    if (this.category.includes(target) && this.category.length == 1) {
       this.splice(this.category, target);
+      this.resetState();
+    } else if (this.category.includes(target) && this.category.length > 1) {
+      this.splice(this.category, target);
+      this.findItems(this.category, "categories");
     } else {
       this.category.push(target);
+      this.findItems(this.category, "categories");
     }
-    products = this.findItems(this.category, "categories");
+  };
+
+  resetState = () => {
+    let products;
+    products = datas.products;
     this.setState({ datas: { products } });
   };
 
-  filtersForProducts = (filter, value) => {
-    this.findItems = (filter, value);
-  };
-
   findItems = (filters, value) => {
-    // filterToString = filter.toString();
-    // console.log(filterToString.class);
-    console.log(this.category);
-    if (this.category.length > 0) {
-      filters.map((e) => {
-        this.filteredProducts = this.state.datas.products.filter(
-          (x) => x[value] == e
-        );
-      });
-    } else {
-      this.filteredProducts = datas.products;
-    }
+    let arrayofproduct = [];
+    filters.map((e) => {
+      arrayofproduct.push(
+        this.state.datas.products.filter((x) => x[value] == e)
+      );
+    });
 
-    return this.filteredProducts;
+    const products = [].concat(...arrayofproduct);
+
+    this.setState({ datas: { products } });
   };
 
   render() {
-    console.log(this.state);
     return (
       <div>
         <section class="filterbar">
