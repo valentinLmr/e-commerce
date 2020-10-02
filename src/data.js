@@ -5,23 +5,23 @@ export default {
       image: "../image/OIP.jpeg",
       name: "tunique bandilas",
       categories: "Robe",
-      brand: "Banditas",
+      brand: "Vans",
       price: 40,
       colors: [
         {
           color: "red",
           sizes: [
             {
-              size: "s-m",
+              size: "s",
               quantity: 2,
             },
             {
-              size: "m-l",
+              size: "m",
               quantity: 2,
             },
             {
-              size: "xl-xxl",
-              quantity: 2,
+              size: "xl",
+              quantity: 0,
             },
           ],
         },
@@ -29,16 +29,16 @@ export default {
           color: "blue",
           sizes: [
             {
-              size: "s-m",
+              size: "s",
               quantity: 2,
             },
             {
-              size: "m-l",
+              size: "m",
               quantity: 2,
             },
             {
-              size: "xl-xxl",
-              quantity: 2,
+              size: "xl",
+              quantity: 0,
             },
           ],
         },
@@ -46,16 +46,16 @@ export default {
           color: "green",
           sizes: [
             {
-              size: "s-m",
+              size: "s",
               quantity: 2,
             },
             {
-              size: "m-l",
+              size: "m",
               quantity: 2,
             },
             {
-              size: "xl-xxl",
-              quantity: 2,
+              size: "xl",
+              quantity: 0,
             },
           ],
         },
@@ -68,22 +68,22 @@ export default {
       image: "../image/OIP.jpeg",
       name: "tunique banditas",
       categories: "Robe",
-      brand: "Banditas",
+      brand: "Veja",
       price: 40,
       colors: [
         {
           color: "red",
           sizes: [
             {
-              size: "s-m",
+              size: "s",
               quantity: 2,
             },
             {
-              size: "m-l",
+              size: "m",
               quantity: 2,
             },
             {
-              size: "xl-xxl",
+              size: "xl",
               quantity: 2,
             },
           ],
@@ -92,15 +92,15 @@ export default {
           color: "blue",
           sizes: [
             {
-              size: "s-m",
+              size: "s",
               quantity: 2,
             },
             {
-              size: "m-l",
+              size: "m",
               quantity: 2,
             },
             {
-              size: "xl-xxl",
+              size: "xl",
               quantity: 2,
             },
           ],
@@ -109,15 +109,15 @@ export default {
           color: "green",
           sizes: [
             {
-              size: "s-m",
+              size: "s",
               quantity: 2,
             },
             {
-              size: "m-l",
+              size: "m",
               quantity: 2,
             },
             {
-              size: "xl-xxl",
+              size: "xl",
               quantity: 2,
             },
           ],
@@ -131,22 +131,22 @@ export default {
       image: "../image/OIP.jpeg",
       name: "tunique bandilas",
       categories: "dress",
-      brand: "Banditas",
+      brand: "Veja",
       price: 40,
       colors: [
         {
           color: "red",
           sizes: [
             {
-              size: "s-m",
+              size: "s",
               quantity: 2,
             },
             {
-              size: "m-l",
+              size: "m",
               quantity: 2,
             },
             {
-              size: "xl-xxl",
+              size: "xl",
               quantity: 2,
             },
           ],
@@ -155,15 +155,15 @@ export default {
           color: "blue",
           sizes: [
             {
-              size: "s-m",
+              size: "s",
               quantity: 2,
             },
             {
-              size: "m-l",
+              size: "m",
               quantity: 2,
             },
             {
-              size: "xl-xxl",
+              size: "xl",
               quantity: 2,
             },
           ],
@@ -172,15 +172,15 @@ export default {
           color: "green",
           sizes: [
             {
-              size: "s-m",
+              size: "s",
               quantity: 2,
             },
             {
-              size: "m-l",
+              size: "m",
               quantity: 2,
             },
             {
-              size: "xl-xxl",
+              size: "xl",
               quantity: 2,
             },
           ],
@@ -201,15 +201,15 @@ export default {
           color: "red",
           sizes: [
             {
-              size: "s-m",
+              size: "s",
               quantity: 2,
             },
             {
-              size: "m-l",
+              size: "m",
               quantity: 2,
             },
             {
-              size: "xl-xxl",
+              size: "xl",
               quantity: 2,
             },
           ],
@@ -218,15 +218,15 @@ export default {
           color: "blue",
           sizes: [
             {
-              size: "s-m",
+              size: "s",
               quantity: 2,
             },
             {
-              size: "m-l",
+              size: "m",
               quantity: 2,
             },
             {
-              size: "xl-xxl",
+              size: "xl",
               quantity: 2,
             },
           ],
@@ -235,15 +235,15 @@ export default {
           color: "green",
           sizes: [
             {
-              size: "s-m",
+              size: "s",
               quantity: 2,
             },
             {
-              size: "m-l",
+              size: "m",
               quantity: 2,
             },
             {
-              size: "xl-xxl",
+              size: "xl",
               quantity: 2,
             },
           ],
@@ -264,15 +264,15 @@ export default {
           color: "red",
           sizes: [
             {
-              size: "s-m",
+              size: "s",
               quantity: 2,
             },
             {
-              size: "m-l",
+              size: "m",
               quantity: 2,
             },
             {
-              size: "xl-xxl",
+              size: "xl",
               quantity: 2,
             },
           ],
@@ -281,15 +281,15 @@ export default {
           color: "blue",
           sizes: [
             {
-              size: "s-m",
+              size: "s",
               quantity: 2,
             },
             {
-              size: "m-l",
+              size: "m",
               quantity: 2,
             },
             {
-              size: "xl-xxl",
+              size: "xl",
               quantity: 2,
             },
           ],
@@ -298,15 +298,15 @@ export default {
           color: "green",
           sizes: [
             {
-              size: "s-m",
+              size: "s",
               quantity: 2,
             },
             {
-              size: "m-l",
+              size: "m",
               quantity: 2,
             },
             {
-              size: "xl-xxl",
+              size: "xl",
               quantity: 2,
             },
           ],
