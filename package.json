@@ -1,6 +1,5 @@
 {
   "name": "e-commerce",
-  "type": "module",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -14,7 +13,7 @@
     "react-scripts": "3.4.3"
   },
   "scripts": {
-    "start": "nodemon --watch backend --exec node --experimental-modules src/backend/server.js",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -36,9 +35,7 @@
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
-  "devDependencies": {
-    "nodemon": "^2.0.4"
-  },
+  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/valentinLmr/e-commerce.git"
