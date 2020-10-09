@@ -61,7 +61,7 @@ class productsScreen extends Component {
     }
     this.findProducts();
   };
-
+  
   checkQuantities = (products) => {
     let arrayOfQuantity = [];
     let sum;
