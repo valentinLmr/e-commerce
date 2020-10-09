@@ -67,7 +67,7 @@ class productsScreen extends Component {
     }
     this.setState({ arrayProducts: this.findItem(this.filters) });
   };
-
+  
   checkQuantities = (products) => {
     let arrayOfQuantity = [];
     let sum;
