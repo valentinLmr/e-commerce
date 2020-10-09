@@ -21,6 +21,12 @@ class productsScreen extends Component {
     array.splice(index, 1);
   };
 
+  resetState = () => {
+    let products;
+    products = [...datas.products];
+    this.setState({ arrayProducts: products });
+  };
+
   reducermethod = (array) => {
     return array.reduce((total, next) => total + next);
   };
@@ -59,7 +65,7 @@ class productsScreen extends Component {
 
         break;
     }
-    this.findProducts();
+    this.setState({ arrayProducts: this.findItem(this.filters) });
   };
 
   checkQuantities = (products) => {
@@ -76,10 +82,10 @@ class productsScreen extends Component {
         if (sum == 0) {
           this.splice(products, product);
         }
-        this.setState({ arrayProducts: products });
+        return products;
       });
     } else {
-      this.setState({ arrayProducts: products });
+      return products;
     }
   };
 
@@ -96,13 +102,7 @@ class productsScreen extends Component {
     return result.quantity;
   };
 
-  resetState = () => {
-    let products;
-    products = [...datas.products];
-    this.setState({ arrayProducts: products });
-  };
-
-  findProducts = () => {
+  findItem = () => {
     let arrayofproduct = [];
     let initialState = [...datas.products];
 
@@ -167,10 +167,7 @@ class productsScreen extends Component {
     }
 
     const products = [].concat(...arrayofproduct);
-    this.checkQuantities(products);
-
-    // this.setState({ arrayProducts: products });
-    // this.filters.datas = products;
+    return products;
   };
 
   filterMethod = (arrayOfProductsTofilter, keyOfProduct, valueOfProduct) => {
