@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import CardProducts from "./cardProducts";
 import datas from "../../data";
-import product from "./cardProducts";
 
 class productsScreen extends Component {
   state = {
